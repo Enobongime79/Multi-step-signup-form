@@ -85,7 +85,7 @@
             </div>
         </div>
         <div class="flex flex-row justify-between text-sm items-center">
-            <button class="hover:text-black text-[#B9BABE] hover:cursor-pointer">Go Back</button>
+            <button class="hover:cursor-pointer hover:bg-[#03295A] hover:text-white px-5 py-3 rounded-md border border-[#03295A] text-[#03295A]">Go Back</button>
             <button class="bg-[#03295A] hover:cursor-pointer hover:bg-[#154B89] text-white px-5 py-3 rounded-md">Next Step</button>
         </div>
 
@@ -108,29 +108,53 @@
             <p class="text-md mt-3 text-[#B9BABE]">You have the option of monthly or yearly billing.</p>
 
             <div class="flex flex-col gap-4">
-                <div class="flex flex-row border border-[#D9D8DD] mt-8 rounded-lg py-4 px-5 gap-4">
+                <div id="arcadeMob" class="flex flex-row border border-[#D9D8DD] mt-8 rounded-lg py-4 px-5 gap-4">
                     <img src="/images/images/icon-arcade.svg" alt="">
                     <div>
                         <p class="text-[#052756] text-md font-bold">Arcade</p>
-                        <p class="text-sm text-[#B9BABE]">$9/mo</p>
+                        <p id="arcadeMonthMob" class="text-sm text-[#B9BABE]">$9/mo</p>
+                        <div id="arcadeYearMob" class="hidden flex-flex-col">
+                            <p class="text-sm text-[#B9BABE]">$90/yr</p>
+                            <p class="text-xs mt-1 text-[#052756]">2 months free</p>
+                        </div>
                     </div>
                 </div>
-                <div class="flex flex-row border border-[#D9D8DD]  rounded-lg py-4 px-5 gap-4">
+                <div id="advancedMob" class="flex flex-row border border-[#D9D8DD]  rounded-lg py-4 px-5 gap-4">
                     <img src="/images/images/icon-advanced.svg" alt="">
                     <div>
                         <p class="text-[#052756] text-md font-bold">Advanced</p>
-                        <p class="text-sm text-[#B9BABE]">$12/mo</p>
+                        <p id="advancedMonthMob" class="text-sm text-[#B9BABE]">$12/mo</p>
+                        <div id="advancedYearMob" class="hidden flex-flex-col">
+                            <p class="text-sm text-[#B9BABE]">$120/yr</p>
+                            <p class="text-xs mt-1 text-[#052756]">2 months free</p>
+                        </div>
                     </div>
                 </div>
-                <div class="flex flex-row border border-[#D9D8DD]  rounded-lg py-4 px-5 gap-4">
+                <div id="proMob" class="flex flex-row border border-[#D9D8DD]  rounded-lg py-4 px-5 gap-4">
                     <img src="/images/images/icon-pro.svg" alt="">
                     <div>
                         <p class="text-[#052756] text-md font-bold">Pro</p>
-                        <p class="text-sm text-[#B9BABE]">$15/mo</p>
+                        <p id="proMonthMob" class="text-sm text-[#B9BABE]">$15/mo</p>
+                        <div id="proYearMob" class="hidden flex-flex-col">
+                            <p class="text-sm text-[#B9BABE]">$150/yr</p>
+                            <p class="text-xs mt-1 text-[#052756]">2 months free</p>
+                        </div>
                     </div>
                 </div>
+
+                <div class="items-center justify-center flex flex-row gap-7 py-6">
+                    <p id="monthlyMob"  class="text-[#15273F]">Monthly</p>
+                    <label class="switch">
+                        <input id="toggleBtnMob" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p id="yearlyMob" class="text-[#B9BABE]">Yearly</p>
+                </div>
+                <div class="flex flex-row justify-between text-sm items-center">
+                    <a href="/"><button class="hover:text-black text-black hover:cursor-pointer px-5 py-3 rounded-md border border-[#03295A]">Go Back</button></a>
+                    <button class="bg-[#03295A] hover:cursor-pointer hover:bg-[#154B89] text-white px-5 py-3 rounded-md">Next Step</button>
+                </div>
             </div>
-            </form>
         </div>
 
     </div>
