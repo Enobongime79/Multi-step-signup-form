@@ -3,6 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  // const { name, email, number } = req.session.signup || {};
+
   res.render('info', { title: 'Multi-Step Sign Up Form' });
 });
 

@@ -3,7 +3,10 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  return res.redirect('/')
+  if (!req.session.signup){
+    return res.redirect('/')
+  }
+  res.render("plan", { title: "Select your plan"})
 });
 
 router.post("/", (req, res) => {
